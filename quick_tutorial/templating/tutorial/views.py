@@ -6,6 +6,6 @@ def home(request):
     return {'name': 'Home View'}
 
 
-@view_config(route_name='hello')
+@view_config(route_name='hello', renderer='home.pt')
 def hello(request):
     return {'name': 'Hello View'}
